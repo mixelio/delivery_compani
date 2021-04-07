@@ -3,6 +3,7 @@
 
 body {
   font-family: Roboto;
+  background-color: #2F343A;
 }
 
 .container {
@@ -39,4 +40,43 @@ display: flex;
 a {
   margin-right: 15px;
 }
+}
+
+.header_navigation {
+  padding: 45px 0 0 0;
+}
+
+.container {
+
+}
+
+.header_navigation__row {
+  display: flex;
+}
+
+.header_navigation__item {
+  display: flex;
+  align-items: center;
+
+  .our_office {
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    &:before {
+      content: ('');
+      background: url('../img/our_offices.png') 0 50% no-repeat;
+    }
+  }
+}
+
+.logo {
+display: flex;
+align-items: center;
+padding-right: 20px;
+border-right: 1px solid #fff;
+
+}
+
+.image {
+  margin: 0 10px 0 0;
+
 }
