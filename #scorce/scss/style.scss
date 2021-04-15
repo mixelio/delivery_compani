@@ -541,6 +541,9 @@ a:hover::after {
   66% {
     transform: translate(-100px, 100px);
     opacity: 0;
+    background: url("../img/vector-plane-black.svg") 41% 58% / 50px 50px
+        no-repeat,
+      #fff;
   }
   100% {
     transform: translate(0, 0);
