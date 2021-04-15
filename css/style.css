@@ -551,8 +551,7 @@ a:hover::after {
   }
   100% {
     transform: translate(0, 0);
-    background-color: #fff;
-    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat;
+    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat, #fff;
   }
 }
 .all_services__item_image {
