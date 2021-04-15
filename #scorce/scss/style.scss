@@ -519,7 +519,7 @@ a:hover::after {
       transition-duration: 600ms;
       .all_services__item_image {
         animation: fly 0.5s;
-        background-color: #fff;
+
         background: url("../img/vector-plane-black.svg") 41% 58% / 50px 50px
             no-repeat,
           #fff;
@@ -541,14 +541,14 @@ a:hover::after {
   66% {
     transform: translate(-100px, 100px);
     opacity: 0;
-    background-color: #fff;
+
     background: url("../img/vector-plane-black.svg") 41% 58% / 50px 50px
         no-repeat,
       #fff;
   }
   100% {
     transform: translate(0, 0);
-    background-color: #fff;
+
     background: url("../img/vector-plane-black.svg") 41% 58% / 50px 50px
         no-repeat,
       #fff;
