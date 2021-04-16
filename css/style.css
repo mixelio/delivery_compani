@@ -283,7 +283,7 @@ a:hover::after {
 .first_screen img {
   position: absolute;
   bottom: 50px;
-  right: 50%;
+  right: calc(50% - 15px);
 }
 
 .first_screen__info {
@@ -832,5 +832,9 @@ footer .logo {
 
   .about_company__block {
     width: 100%;
+  }
+
+  .first_screen__info {
+    padding: 10px 25px;
   }
 }
