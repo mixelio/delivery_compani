@@ -712,3 +712,107 @@ footer {
     margin: 0;
   }
 }
+
+@media (max-width: 940px) {
+  .header_navigation__list li {
+    overflow: hidden;
+    margin: 0 0 0 10px;
+  }
+
+  .first_screen__info {
+    padding: 25px 50px;
+  }
+  .about_company__grey_block {
+    width: 30%;
+    left: 35%;
+  }
+  .block_text {
+    padding: 15px 0;
+  }
+  .block_text h2 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2f343a;
+  }
+  .block_text h3 {
+    margin: 0 0 5px 0;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .block_text p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .about_company__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    width: 48%;
+    border: 0.25px solid #c8a35f;
+  }
+  .about_company__block img {
+    flex-grow: 1;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin: 10px;
+    text-align: center;
+  }
+  .footer__item:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  .slider .slick-arrow {
+    right: 50%;
+  }
+  .slider .slick-arrow.slick-prev {
+    background: url("../img/services__back.svg") 0 0/100% no-repeat;
+    bottom: 60px;
+    left: 0;
+  }
+  .slider .slick-arrow.slick-next {
+    background: url("../img/services__next.svg") 0 0/100% no-repeat;
+    right: 0;
+    top: calc(100% - 60px - 25px);
+  }
+  .slider .slick-slide {
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .services__row {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .slider .slick-slide .services__image {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .all_services__item {
+    width: 48%;
+  }
+  .header_navigation__item {
+    justify-content: center;
+    margin: 5px;
+  }
+  .header_navigation__row {
+    flex-direction: column;
+  }
+}
