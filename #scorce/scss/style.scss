@@ -843,6 +843,9 @@ footer {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    .services__title {
+      text-align: center;
+    }
     p {
       text-align: center;
     }
@@ -854,7 +857,6 @@ footer {
   }
 
   .slider .slick-arrow.slick-prev {
-    left: 20px;
     background: url("../img/services__back.svg") 0 0/100% no-repeat;
   }
   .slider .slick-arrow.slick-next {
