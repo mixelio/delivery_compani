@@ -219,7 +219,6 @@ a:hover::after {
 .first_screen {
   background: url("../img/Rectangle-2.jpg") 50% 50% / cover no-repeat;
   padding: 155px 0 220px 0;
-
   position: relative;
   z-index: -1;
   img {
@@ -228,14 +227,17 @@ a:hover::after {
     right: 50%;
   }
 }
-
+@media (max-width: 940px) {
+  .first_screen__info {
+    padding: 25px 50px;
+  }
+}
 .first_screen__info {
   max-width: 920px;
   margin: 0 auto;
   padding: 45px 70px;
   border: 1px solid #c8a35f;
   box-sizing: border-box;
-
   p {
     font-size: 18px;
     line-height: 28px;

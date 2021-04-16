@@ -7,25 +7,33 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -36,7 +44,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -53,7 +63,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: #000;
 }
@@ -71,7 +82,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -275,7 +291,7 @@ a:hover::after {
 }
 
 .first_screen {
-  background: url("../img/Rectangle-2.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/Rectangle-2.jpg") 50% 50% / cover no-repeat;
   padding: 155px 0 220px 0;
   position: relative;
   z-index: -1;
@@ -535,7 +551,8 @@ a:hover::after {
 }
 .all_services__item:hover .all_services__link .all_services__item_image {
   animation: fly 0.5s;
-  background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat, #fff;
+  background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat,
+    #fff;
 }
 
 @keyframes fly {
@@ -551,11 +568,13 @@ a:hover::after {
   66% {
     transform: translate(-100px, 100px);
     opacity: 0;
-    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat, #fff;
+    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat,
+      #fff;
   }
   100% {
     transform: translate(0, 0);
-    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat, #fff;
+    background: url("../img/vector-plane-black.svg") 41% 58%/50px 50px no-repeat,
+      #fff;
   }
 }
 .all_services__item_image {
@@ -669,7 +688,7 @@ footer .logo {
   color: #fff;
 }
 .footer__row a {
-  display: block;
+  display: inline;
 }
 
 .footer__item {
@@ -699,4 +718,101 @@ footer .logo {
 }
 .footer__phone:last-child {
   margin: 0;
+}
+
+@media (max-width: 940px) {
+  .header_navigation__list li {
+    overflow: hidden;
+    margin: 0 0 0 10px;
+  }
+
+  .first_screen__info {
+    padding: 25px 50px;
+  }
+  .about_company__grey_block {
+    width: 30%;
+    left: 35%;
+  }
+  .block_text {
+    padding: 15px 0;
+  }
+  .block_text h2 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2f343a;
+  }
+  .block_text h3 {
+    margin: 0 0 5px 0;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .block_text p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .about_company__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    width: 48%;
+    border: 0.25px solid #c8a35f;
+  }
+  .about_company__block img {
+    flex-grow: 1;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin: 10px;
+    text-align: center;
+  }
+  .footer__item:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  .slider .slick-arrow {
+    right: 50%;
+  }
+  .slider .slick-arrow.slick-prev {
+    background: url("../img/services__back.svg") 0 0/100% no-repeat;
+    bottom: 60px;
+    left: 0;
+  }
+  .slider .slick-arrow.slick-next {
+    background: url("../img/services__next.svg") 0 0/100% no-repeat;
+    right: 0;
+    top: calc(100% - 60px - 25px);
+  }
+  .slider .slick-slide {
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .services__row {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .slider .slick-slide .services__image {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .all_services__item {
+    width: 48%;
+  }
 }
