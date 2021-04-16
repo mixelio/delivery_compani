@@ -849,4 +849,28 @@ footer .logo {
   .first_screen img {
     bottom: 30px;
   }
+
+  .services__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .services__info p {
+    text-align: center;
+  }
+
+  .slider .slick-arrow {
+    width: 100px;
+    height: 25px;
+  }
+
+  .slider .slick-arrow.slick-prev {
+    left: 20px;
+    background: url("../img/services__back.svg") 0 0/100% no-repeat;
+  }
+
+  .slider .slick-arrow.slick-next {
+    background: url("../img/services__next.svg") 0 0/100% no-repeat;
+  }
 }
