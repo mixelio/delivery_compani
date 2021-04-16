@@ -809,7 +809,6 @@ footer .logo {
   .first_screen__title {
     margin: 0 0 45px 0;
     font-size: 44px;
-    font-weight: 700;
     line-height: 55px;
   }
 }
@@ -836,5 +835,18 @@ footer .logo {
 
   .first_screen__info {
     padding: 10px 25px;
+  }
+
+  .first_screen__title {
+    margin: 0 0 15px 0;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  .first_screen {
+    padding: 55px 0 80px 0;
+  }
+  .first_screen img {
+    bottom: 30px;
   }
 }
