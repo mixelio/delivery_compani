@@ -497,7 +497,7 @@ a:hover::after {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   perspective: 800px;
 }
@@ -505,7 +505,7 @@ a:hover::after {
 .all_services__item {
   background-color: #393f47;
   width: 24.8%;
-  margin-bottom: 0.2%;
+  border: 0.5px solid #2f343a;
   transition-duration: 300ms;
 }
 .all_services__item .all_services__link {
@@ -744,6 +744,10 @@ footer .logo {
     width: 48%;
   }
 
+  footer {
+    padding: 10px 0;
+  }
+
   .footer__row {
     flex-direction: column;
     align-items: center;
@@ -824,6 +828,14 @@ footer .logo {
     font-size: 15px;
   }
 
+  .all_services__item .all_services__link span {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
   .title {
     font-size: 20px;
     line-height: 29px;
@@ -831,6 +843,12 @@ footer .logo {
 
   .about_company__block {
     width: 100%;
+  }
+
+  .block_text h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 150%;
   }
 
   .first_screen__info {
@@ -847,7 +865,7 @@ footer .logo {
     padding: 55px 0 80px 0;
   }
   .first_screen img {
-    bottom: 30px;
+    bottom: 20px;
   }
 
   .services__info {
