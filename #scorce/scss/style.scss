@@ -876,10 +876,11 @@ footer {
       align-items: center;
       justify-content: space-around;
       li {
+        //border: 1px solid #fff;
         margin: 5px;
-
-        font-size: 20px;
+        padding: 15px;
         a {
+          font-size: 25px;
           padding: 15px;
         }
       }

@@ -881,9 +881,10 @@ footer .logo {
   }
   .menu__body .menu__list li {
     margin: 5px;
-    font-size: 20px;
+    padding: 15px;
   }
   .menu__body .menu__list li a {
+    font-size: 25px;
     padding: 15px;
   }
 }
