@@ -214,6 +214,10 @@ body {
   display: flex;
   align-items: center;
 }
+.menu__arrow {
+  display: none;
+}
+
 .menu__body {
   padding: 2px;
 }
@@ -829,8 +833,16 @@ footer .logo {
     transform: scale(1) translate(0, 50%);
   }
 
+  body._touch .menu__arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 5px solid #fff;
+  }
+
   .menu__body {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -862,6 +874,7 @@ footer .logo {
   }
   .menu__body .menu__list li:last-child span {
     display: block;
+    cursor: pointer;
   }
   .menu__body .menu__list a {
     font-size: 25px;
@@ -870,7 +883,7 @@ footer .logo {
     position: absolute;
     z-index: 6;
     top: 100%;
-    right: -120%;
+    right: -26%;
     color: #fff;
     min-width: 200px;
     text-align: center;
@@ -883,6 +896,13 @@ footer .logo {
   .menu__body .menu__list .menu_sub-link {
     color: white;
     font-size: 14px;
+  }
+
+  body._touch .menu__list > li._active .menu__sub-list {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
   }
 
   .header_navigation__logo {
