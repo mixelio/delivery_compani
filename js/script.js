@@ -6,7 +6,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     infinite: true,
     speed: 500,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 6000,
   });
 });
@@ -38,6 +38,8 @@ const isMobile = {
   },
 };
 
+// Подменю бургера
+
 if (isMobile.any()) {
   document.body.classList.add("_touch");
 
@@ -52,4 +54,16 @@ if (isMobile.any()) {
   }
 } else {
   document.body.classList.add("_pc");
+}
+
+// Меню Бургер
+
+const iconMenu = document.querySelector(".menu__icon");
+
+if (iconMenu) {
+  const menuBody = document.querySelector(".menu__body");
+  iconMenu.addEventListener("click", function (e) {
+    iconMenu.classList.toggle("_active");
+    menuBody.classList.toggle("_active");
+  });
 }
