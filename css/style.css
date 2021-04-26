@@ -120,6 +120,10 @@ body {
   background-color: #2f343a;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;

@@ -50,7 +50,9 @@ body {
   font-family: Roboto;
   background-color: #2f343a;
 }
-
+body._lock {
+  overflow: hidden;
+}
 // Вспомогательные элементы
 
 .container {
