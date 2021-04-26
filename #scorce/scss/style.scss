@@ -154,6 +154,7 @@ body {
 .menu__arrow {
   display: none;
 }
+
 .menu__body {
   padding: 2px;
   .our_office_1 {
@@ -752,6 +753,35 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .menu__body {
+    .menu__list {
+      span {
+        &:before,
+        &:after {
+          display: none;
+        }
+        a {
+          &:before,
+          &:after {
+            display: none;
+          }
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      .menu_sub-link {
+        &:before,
+        &:after {
+          display: none;
+        }
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
   .header_fixline {
     display: none;
   }
@@ -805,13 +835,15 @@ footer {
     display: block;
     width: 0;
     height: 0;
+    transform: rotateX(0);
+    transition: transform 0.3s ease 0s;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 5px solid #fff;
   }
 
   .menu__body {
-    // display: none;
+    //display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -874,6 +906,10 @@ footer {
     opacity: 1;
     visibility: visible;
     pointer-events: visible;
+  }
+
+  body._touch .menu__list > li._active .menu__arrow {
+    transform: rotateX(180deg);
   }
 
   .header_navigation__logo {

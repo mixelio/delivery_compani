@@ -787,6 +787,22 @@ footer .logo {
   }
 }
 @media (max-width: 800px) {
+  .menu__body .menu__list span:before, .menu__body .menu__list span:after {
+    display: none;
+  }
+  .menu__body .menu__list span a:before, .menu__body .menu__list span a:after {
+    display: none;
+  }
+  .menu__body .menu__list span a:hover {
+    color: #fff;
+  }
+  .menu__body .menu__list .menu_sub-link:before, .menu__body .menu__list .menu_sub-link:after {
+    display: none;
+  }
+  .menu__body .menu__list .menu_sub-link:hover {
+    color: #fff;
+  }
+
   .header_fixline {
     display: none;
   }
@@ -837,6 +853,8 @@ footer .logo {
     display: block;
     width: 0;
     height: 0;
+    transform: rotateX(0);
+    transition: transform 0.3s ease 0s;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 5px solid #fff;
@@ -903,6 +921,10 @@ footer .logo {
     opacity: 1;
     visibility: visible;
     pointer-events: visible;
+  }
+
+  body._touch .menu__list > li._active .menu__arrow {
+    transform: rotateX(180deg);
   }
 
   .header_navigation__logo {
