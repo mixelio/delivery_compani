@@ -914,7 +914,7 @@ footer .logo {
     bottom: 20px;
   }
 
-  .all_services__item {
+  .all_services .all_services__row .all_services__item {
     width: 48%;
   }
 
@@ -966,14 +966,13 @@ footer .logo {
     padding: 10px 25px;
   }
 
-  .first_screen__title {
-    margin: 0 0 15px 0;
-    font-size: 34px;
-    line-height: 45px;
-  }
-
   .first_screen {
     padding: 55px 0 80px 0;
+  }
+  .first_screen .first_screen__title {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    line-height: 45px;
   }
   .first_screen img {
     bottom: 20px;
@@ -1022,5 +1021,10 @@ footer .logo {
 
   .menu__list a {
     font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .all_services .all_services__row .all_services__item {
+    width: 90%;
   }
 }

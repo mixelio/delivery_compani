@@ -884,8 +884,12 @@ footer {
     }
   }
 
-  .all_services__item {
-    width: 48%;
+  .all_services {
+    .all_services__row {
+      .all_services__item {
+        width: 48%;
+      }
+    }
   }
   .all_services
     .all_services__row
@@ -936,12 +940,13 @@ footer {
   .first_screen__info {
     padding: 10px 25px;
   }
-  .first_screen__title {
-    margin: 0 0 15px 0;
-    font-size: 34px;
-    line-height: 45px;
-  }
+
   .first_screen {
+    .first_screen__title {
+      margin: 0 0 15px 0;
+      font-size: 30px;
+      line-height: 45px;
+    }
     padding: 55px 0 80px 0;
     img {
       bottom: 20px;
@@ -993,5 +998,15 @@ footer {
 
   .menu__list a {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .all_services {
+    .all_services__row {
+      .all_services__item {
+        width: 90%;
+      }
+    }
   }
 }
