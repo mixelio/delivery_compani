@@ -617,6 +617,9 @@ body._lock {
 .about_company__text {
   width: 40%;
 }
+.about_company__text .all_services__title {
+  margin: 0 0 40px 0;
+}
 .about_company__text p {
   font-size: 16px;
   line-height: 23px;
@@ -791,6 +794,10 @@ footer .logo {
   }
 }
 @media (max-width: 800px) {
+  .title {
+    font-size: 32px;
+  }
+
   .menu__body {
     overflow: auto;
   }
@@ -874,13 +881,12 @@ footer .logo {
 
   body._touch .menu__arrow {
     display: block;
-    width: 0;
-    height: 0;
+    width: 10px;
+    height: 10px;
     transform: rotateX(0);
     transition: transform 0.3s ease 0s;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 5px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
   }
 
   .menu__body {
@@ -925,9 +931,10 @@ footer .logo {
   }
   .menu__body .menu__list .menu__sub-list {
     position: absolute;
+    width: 100%;
     z-index: 6;
     top: 100%;
-    right: -26%;
+    right: -200%;
     color: #fff;
     min-width: 200px;
     text-align: center;
@@ -1008,6 +1015,9 @@ footer .logo {
 
   .gold-line {
     margin: 80px 0 20px 0;
+    width: 100%;
+    transform: scaleY(0.5);
+    height: 10px;
   }
 
   .lang {
@@ -1026,8 +1036,9 @@ footer .logo {
   }
 
   .title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 29px;
+    text-align: center;
   }
 
   .about_company__block {
@@ -1099,6 +1110,10 @@ footer .logo {
   }
 }
 @media (max-width: 450px) {
+  .title {
+    font-size: 18px;
+  }
+
   .menu__body .menu__list a {
     font-size: 15px;
   }
@@ -1107,7 +1122,7 @@ footer .logo {
   }
 
   .menu__body .menu__list .menu__sub-list {
-    right: -36%;
+    right: -370%;
   }
 
   .all_services .all_services__row .all_services__item {

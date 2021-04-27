@@ -59,9 +59,9 @@ if (isMobile.any()) {
 // Меню Бургер
 
 const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
 
 if (iconMenu) {
-  const menuBody = document.querySelector(".menu__body");
   iconMenu.addEventListener("click", function (e) {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
@@ -88,7 +88,13 @@ if (menuLinks.length > 0) {
       const gotoBlockValue =
         gotoBlock.getBoundingClientRect().top +
         pageYOffset -
-        document.querySelector(".fixline").offsetHeight;
+        document.querySelector(".header_fixline").offsetHeight;
+
+      if (iconMenu.classList.contains("_active")) {
+        document.body.classList.remove("_lock");
+        iconMenu.classList.remove("_active");
+        menuBody.classList.remove("_active");
+      }
 
       window.scrollTo({
         top: gotoBlockValue,
